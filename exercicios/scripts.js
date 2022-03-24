@@ -1,11 +1,10 @@
-// Aqui eu tenho um comentário em linha
-
 /*
-    Aqui eu tenho um comentário multi linha
+    Number
+        * números
 
-    o código abaixo escreve alguma mensagem no devtools
-
+        33 // internos
+        12.5 // reais
+        NaN // Not a Number
+        Infinity // ifinito
 */
-
-
-console.log('Bem vindos ao Starter') //alguma coisa console.log('iria ignorar')
+console.log(12.5 / 12)
