@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            background-color: rgba(128, 128, 128, 0.377);
+            padding-bottom: 50px;
+            
+            
+        }
+
+        h1 {
+            padding-top: 20px;
+            margin: auto;
+        }
+
+        div#q1 {
+            margin-left: 30px;
+        }
+
+        div#q2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        div#res {
+            margin-top: 15px;
+        }
+
+        input {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="q1">
+            <h1>Teste</h1>
+            <div id="q2">Nome do país</div>
+            <input type="text" name="pais1" id="pais1">
+            <input type="button" value="Verificar" onclick="calcular()">
+            <div id="res">
+            
+            </div>
+        </div>
+    </main>
+
+<script>
+    function calcular(){
+       // retorna objeto, tendo que transformar em String
+        var pais = window.document.querySelector('input#pais1') 
+        var res = window.document.querySelector('div#res')
+
+        var nac = String(pais.value)
+        
+        if (nac == 'Brasil') {
+            res.innerHTML = `<p>Sua nacionalidade é <strong>Brasileira</strong></p>`
+        } else {       
+                res.innerHTML = `<p>Sua nacionalidae é <strong>Estrangeira</strong></p>`
+        }
+    }
+</script>
+</body>
+</html>
