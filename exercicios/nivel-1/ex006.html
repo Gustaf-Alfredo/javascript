@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número com JS</title>
+    <style>
+        button {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando dois números</h1>
+    <button onclick="calcular()">Iniciar a soma</button>
+    <section id="res"><p>O resultado vem aqui...</p></section>
+
+    <script>
+        function calcular() {
+            let n1 = Number(window.prompt('Digite um número:'))
+            let n2 = Number(window.prompt('Digite outro número:'))
+
+            res.innerHTML = `<p>A soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é igual a <strong>${n1+n2}</strong>`
+        }
+    </script>
+</body>
+</html>

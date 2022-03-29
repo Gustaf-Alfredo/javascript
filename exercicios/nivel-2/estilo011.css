@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+body { font: 12pt Arial; }
+h1, h2, h3 { font-family: 'Pacifico', cursive; font-weight: normal;}
+button { font-size: 12pt; padding: 30px; }
+
+strong {
+    color: red;
+}
