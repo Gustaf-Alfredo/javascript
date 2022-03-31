@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="res"><p>Aqui vai dizer a hora</p></section>
+    <script>
+        let body = window.document.querySelector('body')
+        let n1 = window.prompt('Digite a hora atual:')
+        let n2 = window.document.getElementById('res')
+        n2.innerHTML = `São ${n1} horas em ponto `
+        if (n1 >18) {
+          body.style.backgroundColor = 'black'
+        } else {
+            body.style.backgroundColor = 'blue'
+        }
+
+        
+    </script>
+</body>
+</html>
